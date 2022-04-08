@@ -12,10 +12,26 @@
       sizes="32x32"
       href="./images/favicon.ico"
     />
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body>
     <a class="skip-to-content" href="#main-content">Skip to content</a>
     <main class="">{% block content %}{% endblock %}</main>
+    <!-- Netlify CMS -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
     <!-- Load Bootstrap core -->
     <!-- Load own js -->
     <script src="{{'/js/index.js' | url}}"></script>
