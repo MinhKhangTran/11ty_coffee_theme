@@ -22,9 +22,9 @@ collections:
           - { label: About Text, name: about, widget: text }
       - name: "navbar"
         label: "Navbar"
-        file: "_data/navbar.json"
+        file: "src/_data/navbar.json"
         fields:
-          - { label: "Brand", name: "Brand", widget: string }
+          - { label: "brand", name: "Brand", widget: string }
           - {
               label: "Logo",
               name: "logo",
@@ -32,7 +32,7 @@ collections:
               required: false,
               hint: "If not specified, Brand will be used as a text link",
             }
-          - name: "Navigations"
+          - name: "navigations"
             label: "navigations"
             widget: "list"
             fields:
