@@ -17,12 +17,13 @@
     </button>
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav mx-auto">
+        {% for nav in navbar.navigations %}
         <li class="nav-item px-lg-4">
-          <a href="/" class="nav-link text-uppercase">Home</a>
+          <a href="{{nav.Url}}" class="nav-link text-uppercase"
+            >{{nav.Navigation}}</a
+          >
         </li>
-        <li class="nav-item px-lg-4">
-          <a href="/about" class="nav-link text-uppercase">About</a>
-        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
