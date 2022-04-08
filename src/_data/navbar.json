@@ -1,0 +1,21 @@
+{
+  "Brand": "Start Bootstrap",
+  "navigations": [
+    {
+      "Url": "/",
+      "Navigation": "home"
+    },
+    {
+      "Url": "/about",
+      "Navigation": "about"
+    },
+    {
+      "Url": "/products",
+      "Navigation": "products"
+    },
+    {
+      "Url": "/store",
+      "Navigation": "store"
+    }
+  ]
+}
