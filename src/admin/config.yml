@@ -33,21 +33,24 @@ collections:
         file: "src/_data/footer.json"
         fields:
           - {name: "name", label: "name", widget: "string"}
-  - name: "homepage"
-    label: "Homepage"
-    file: "src/index.html"
-    fields:
-      - {
-          label: Layout,
-          name: "layout",
-          widget: "hidden",
-          default: "layouts/home.html",
-        }
-      - { label: Title, name: title, widget: string }
-      - { name: "Card Heading", label: "card_heading", widget: "string"}
-      - { name: "Card Subheading", label: "card_sub", widget: "string"}
-      - { name: "Card Description", label: "card_desc", widget: "string"}
-      - { name: "Card Button", label: "card_btn", widget: "string"}
-      - { name: "Card Image", label: "card_img", widget: "image", required: true}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "src/index.html"
+        fields:
+          - {
+              label: Layout,
+              name: "layout",
+              widget: "hidden",
+              default: "layouts/home.html",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: "Card Heading", name: "card_heading", widget: "string"}
+          - { label: "Card Subheading", name: "card_sub", widget: "string"}
+          - { label: "Card Description", name: "card_desc", widget: "string"}
+          - { label: "Card Button", name: "card_btn", widget: "string"}
+          - { label: "Card Image", name: "card_img", widget: "image", required: true}
 
         
