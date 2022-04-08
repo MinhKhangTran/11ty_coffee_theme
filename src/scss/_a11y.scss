@@ -19,6 +19,9 @@
   transition: transform 500ms ease-in;
   position: absolute;
   z-index: 1000;
+  &:not(:focus) {
+    @extend .sr-only;
+  }
 }
 .skip-to-content:focus {
   transform: translateY(0);

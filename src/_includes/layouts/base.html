@@ -16,10 +16,20 @@
       defer
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      ,
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <a class="skip-to-content" href="#main-content">Skip to content</a>
-    <main class="">{% block content %}{% endblock %}</main>
+    <div>
+      {% include "partials/navbar.html" %}
+      <main tabindex="-1" id="main-content">
+        {% block content %}{% endblock %}
+      </main>
+    </div>
     <!-- Netlify CMS -->
     <script>
       if (window.netlifyIdentity) {
