@@ -1,8 +1,18 @@
 <header>
   <h1 class="site-heading text-center text-faded d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">
-      A Free Bootstrap Business Theme
+      {% if navbar.header %}
+        {{navbar.header}}
+      {% else %}
+        header
+      {% endif %}
     </span>
-    <span class="site-heading-lower"> Business Casual </span>
+    <span class="site-heading-lower"> 
+      {% if navbar.subheader %}
+        {{navbar.subheader}}
+      {% else %}
+        subheader
+      {% endif %}
+    </span>
   </h1>
 </header>

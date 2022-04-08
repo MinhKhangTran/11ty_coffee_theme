@@ -19,7 +19,6 @@ collections:
               default: "layouts/home.html",
             }
           - { label: Title, name: title, widget: string }
-          - { label: About Text, name: about, widget: text }
       - name: "navbar"
         label: "Navbar"
         file: "src/_data/navbar.json"
@@ -38,3 +37,6 @@ collections:
             fields:
               - { name: "Url", label: "url", widget: "string" }
               - { name: "Navigation", label: "navigation", widget: "string" }
+          - {name: "header", label: "header", widget: "string"}
+          - {name: "subheader", label: "subheader", widget: "string"}
+
