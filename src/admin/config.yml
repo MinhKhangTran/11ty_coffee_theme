@@ -20,3 +20,21 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: About Text, name: about, widget: text }
+      - name: "navbar"
+        label: "Navbar"
+        file: "_data/navbar.json"
+        fields:
+          - { label: "Brand", name: "Brand", widget: string }
+          - {
+              label: "Logo",
+              name: "logo",
+              widget: "image",
+              required: false,
+              hint: "If not specified, Brand will be used as a text link",
+            }
+          - name: "Navigations"
+            label: "navigations"
+            widget: "list"
+            fields:
+              - { name: "Url", label: "url", widget: "string" }
+              - { name: "Navigation", label: "navigation", widget: "string" }

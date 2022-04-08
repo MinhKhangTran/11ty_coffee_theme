@@ -13,3 +13,13 @@
 
 // components
 @import "components/navbar";
+@import "components/bootstrap-overrides";
+@import "components/buttons";
+
+// sections
+@import "sections/about";
+@import "sections/cta";
+@import "sections/footer";
+@import "sections/intro";
+@import "sections/products";
+@import "sections/store";
