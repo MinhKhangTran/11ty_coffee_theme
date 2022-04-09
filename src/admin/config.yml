@@ -35,7 +35,7 @@ collections:
           - { name: "name", label: "name", widget: "string" }
   - name: "products"
     label: "Products"
-    folder: "products"
+    folder: "src/products"
     create: true
     slug: "{{slug}}"
     fields:
@@ -82,7 +82,16 @@ collections:
           - { label: Title, name: title, widget: string, default: "About" }
           - { label: "Card Heading", name: "card_heading", widget: "string" }
           - { label: "Card Subheading", name: "card_sub", widget: "string" }
-          - { label: "Card Description", name: "card_desc", widget: "string" }
+          - {
+              label: "Card Description 1",
+              name: "card_desc_1",
+              widget: "string",
+            }
+          - {
+              label: "Card Description 2",
+              name: "card_desc_2",
+              widget: "string",
+            }
           - {
               label: "Card Image",
               name: "card_img",
