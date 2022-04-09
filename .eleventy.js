@@ -5,6 +5,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addWatchTarget("./src/scss/");
 
+  // Returns products items, sorted by display order
+  eleventyConfig.addCollection("products", (collection) => {
+    return collection.getFilteredByGlob("./src/products/*.md");
+  });
+
   return {
     dir: {
       input: "src",
