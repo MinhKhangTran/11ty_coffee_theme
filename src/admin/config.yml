@@ -26,23 +26,28 @@ collections:
             fields:
               - { name: "Url", label: "url", widget: "string" }
               - { name: "Navigation", label: "navigation", widget: "string" }
-          - {name: "header", label: "header", widget: "string"}
-          - {name: "subheader", label: "subheader", widget: "string"}
+          - { name: "header", label: "header", widget: "string" }
+          - { name: "subheader", label: "subheader", widget: "string" }
       - name: "footer"
         label: "footer"
         file: "src/_data/footer.json"
         fields:
-          - {name: "name", label: "name", widget: "string"}
+          - { name: "name", label: "name", widget: "string" }
   - name: "products"
     label: "Products"
     folder: "products"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Card Heading", name: "card_heading", widget: "string"}
-      - {label: "Card Subheading", name: "card_sub", widget: "string"}
-      - {label: "Card Description", name: "card_desc", widget: "string"}
-      - {label: "Card Image", name: "card_img", widget: "image", required: true}
+      - { label: "Card Heading", name: "card_heading", widget: "string" }
+      - { label: "Card Subheading", name: "card_sub", widget: "string" }
+      - { label: "Card Description", name: "card_desc", widget: "string" }
+      - {
+          label: "Card Image",
+          name: "card_img",
+          widget: "image",
+          required: true,
+        }
   - label: "Pages"
     name: "pages"
     files:
@@ -57,23 +62,33 @@ collections:
               default: "layouts/home.html",
             }
           - { label: Title, name: title, widget: string }
-          - { label: "Card Heading", name: "card_heading", widget: "string"}
-          - { label: "Card Subheading", name: "card_sub", widget: "string"}
-          - { label: "Card Description", name: "card_desc", widget: "string"}
-          - { label: "Card Button", name: "card_btn", widget: "string"}
-          - { label: "Card Image", name: "card_img", widget: "image", required: true}
-          - { label: "Cta Heading", name: "cta_heading", widget: "string"}
-          - { label: "Cta Subheading", name: "cta_sub", widget: "string"}
-          - { label: "Cta Description", name: "cta_desc", widget: "string"}
+          - { label: "Card Heading", name: "card_heading", widget: "string" }
+          - { label: "Card Subheading", name: "card_sub", widget: "string" }
+          - { label: "Card Description", name: "card_desc", widget: "string" }
+          - { label: "Card Button", name: "card_btn", widget: "string" }
+          - {
+              label: "Card Image",
+              name: "card_img",
+              widget: "image",
+              required: true,
+            }
+          - { label: "Cta Heading", name: "cta_heading", widget: "string" }
+          - { label: "Cta Subheading", name: "cta_sub", widget: "string" }
+          - { label: "Cta Description", name: "cta_desc", widget: "string" }
       - name: "about"
         label: "about"
         file: "src/_data/about.json"
         fields:
           - { label: Title, name: title, widget: string, default: "About" }
-          - { label: "Card Heading", name: "card_heading", widget: "string"}
-          - { label: "Card Subheading", name: "card_sub", widget: "string"}
-          - { label: "Card Description", name: "card_desc", widget: "string"}
-          - { label: "Card Image", name: "card_img", widget: "image", required: true}
+          - { label: "Card Heading", name: "card_heading", widget: "string" }
+          - { label: "Card Subheading", name: "card_sub", widget: "string" }
+          - { label: "Card Description", name: "card_desc", widget: "string" }
+          - {
+              label: "Card Image",
+              name: "card_img",
+              widget: "image",
+              required: true,
+            }
       - name: "products"
         label: "products"
         file: "src/products.html"
@@ -96,18 +111,15 @@ collections:
               widget: "hidden",
               default: "layouts/products.html",
             }
-          - { label: "Card Heading", name: "card_heading", widget: "string"}
-          - { label: "Card Subheading", name: "card_sub", widget: "string"}
-          - { label: "Address", name: "address", widget: "string"}
-          - { label: "Zip", name: "zip", widget: "string"}
-          - { label: "Call Text", name: "call_text", widget: "string"}
-          - { label: "Number", name: "nummer", widget: "string"}
+          - { label: "Card Heading", name: "card_heading", widget: "string" }
+          - { label: "Card Subheading", name: "card_sub", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Zip", name: "zip", widget: "string" }
+          - { label: "Call Text", name: "call_text", widget: "string" }
+          - { label: "Number", name: "nummer", widget: "string" }
           - label: "Operation hours"
             name: "operation_hours"
             widget: "list"
             fields:
-              - { label: "Work Day", name: "work_day", widget: "string"}
-              - { label: "Hours", name: "hours", widget: "string"}
-
-
-      
+              - { label: "Work Day", name: "work_day", widget: "string" }
+              - { label: "Hours", name: "hours", widget: "string" }

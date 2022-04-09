@@ -1,0 +1,7 @@
+<!-- prettier-ignore -->
+{% set pageTitle = title%} 
+{% if page.url === "/about/" %} 
+    {% set pageTitle = about.title %} 
+{% endif %}
+
+<title>{{pageTitle}}</title>
