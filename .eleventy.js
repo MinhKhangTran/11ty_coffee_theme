@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => {
     return new Date().getFullYear();
   });
+  // add filter for the year
+  eleventyConfig.addFilter("year", () => {
+    return new Date().getFullYear();
+  });
 
   return {
     dir: {
