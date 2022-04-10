@@ -10,6 +10,11 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("./src/products/*.md");
   });
 
+  // add shortcode for the year
+  eleventyConfig.addShortcode("year", () => {
+    return new Date().getFullYear();
+  });
+
   return {
     dir: {
       input: "src",

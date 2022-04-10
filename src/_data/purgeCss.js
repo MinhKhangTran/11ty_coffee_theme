@@ -24,6 +24,7 @@ module.exports = async function () {
     "src/**/*.md",
     "src/**/*.liquid",
     "src/**/*.js",
+    "node_modules/bootstrap/js/src/collapse.js",
   ];
 
   fs.readFile(sourceCSS, (err, css) => {
