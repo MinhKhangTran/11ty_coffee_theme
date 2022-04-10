@@ -1,0 +1,34 @@
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner bg-faded text-center rounded">
+          <h2 class="section-heading mb-5">
+            <span class="section-heading-upper">{{card_heading}}</span>
+            <span class="section-heading-lower">{{card_sub}}</span>
+          </h2>
+          <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+            {% for item in operation_hours %}
+            <li class="list-unstyled-item list-hours-item d-flex">
+              {{item.work_day}}
+              <span class="ms-auto">{{item.hours}}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          <p class="address mb-5">
+            <em>
+              <strong>{{address}}</strong>
+              <br />
+              {{zip}}
+            </em>
+          </p>
+          <p class="mb-0">
+            <small><em>{{call_text}}</em></small>
+            <br />
+            {{nummer}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
